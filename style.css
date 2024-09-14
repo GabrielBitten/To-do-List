@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(https://i.pinimg.com/originals/7b/e5/a1/7be5a1cb85ca4d0483c1ff17a487d50a.gif);
+    background-image: url(wave_background.jpg);
     background-size: cover;
     
 }
@@ -14,10 +14,14 @@ html{
     height: 100vh;
     
 }
-button{
-    background-color:#09cb7c;
+input::placeholder {
     color: white;
-    border: 2px solid #00a459 ;
+    opacity: 0.8; 
+}
+button{
+    background-color:transparent;
+    color: #262b91;
+    border: 2px solid #262b91 ;
     padding: .3rem .6rem;
     font-size: 1rem;
     border-radius: 5px;
@@ -30,7 +34,7 @@ button{
     
 }
 button:hover{
-    background-color: #11f19e;
+    background-color: #1aa4ff;
 }
 
 .finish-todo ,
@@ -43,14 +47,15 @@ button:hover{
 }
 
 header h1{
-    color: #0d1117;
+    color: white;
+    font-weight: bold;
 }
 
 input, select{
     padding:  0.25rem 0.5rem;
-    border:2px solid #00a459;
+    border:2px solid #262b91;
     border-radius: 5px;
-    background-color: #11f19e;
+    background-color: #1aa4ff;
     outline: none;
     font-weight: bold;
 }
@@ -63,14 +68,14 @@ input, select{
     max-width: 450px;
     margin: 6rem auto ;
     padding: 1rem;
-    border: 2px solid #00a459;
-    background-color: #11f19e;
+    border: 2px solid #262b91;
+    background-color: #1aa4ff;
     border-radius: 5px;
 }
 .todo-container header{
     text-align: center;
     padding: 0 1rem 1rem;
-    border-bottom: 2px solid #00a459;
+    border-bottom: 2px solid #262b91;
 }
 
 /*to do form*/
@@ -78,7 +83,7 @@ input, select{
 #edit-form{
     
     padding: 1rem;
-    border-bottom: 1px solid #00a459;
+    border-bottom: 1px solid #262b91;
 }
 
 #todo-form p,
@@ -103,14 +108,14 @@ input, select{
 /*toolbar*/
 #toolbar{
     padding: 1rem;
-    border-bottom: 1px solid #00a459;
+    border-bottom: 1px solid #262b91;
     display: flex;
 }
 #toolbar h4{
     margin-bottom: .5rem;
 }
 #search{
-    border-right: 1px solid #00a459;
+    border-right: 1px solid #262b91;
     padding-right: 1rem;
     margin-right: 1rem;
     width: 65%;
@@ -140,7 +145,7 @@ input, select{
     justify-content: space-around;
     align-items: center;
     padding:1rem ;
-    border-bottom: 1px solid #00a459;
+    border-bottom: 1px solid #262b91;
     transition: .3s;
     
 }
@@ -153,15 +158,15 @@ input, select{
     margin-left: .4rem;
 }
 .done {
-    background-color: #00a459;
+    background-color: #1588d4;
     border-radius: 5px;
 }
 .done h3{
-    color: whitesmoke;
+    color: #262b91;
     text-decoration: line-through;
     font-style: italic;
 
 }
 .todo i{
-    color: white;
+    color: #262b91;
 }
